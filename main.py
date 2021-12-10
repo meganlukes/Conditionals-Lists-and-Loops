@@ -82,8 +82,13 @@ import random
 #   print("Keep looking.")
 
 
-coin = random.random()
-if coin > 0.5:
-  print("heads")
-else:
-  print("tails")
+# coin = random.random()
+# if coin > 0.5:
+#   print("heads")
+# else:
+#   print("tails")
+
+
+bamboo_species = ["Bambusa chungii Blue Chungii", "Bambusa multiplex Alphonse Karr", "Bambusa multiplex Fernleaf", "Bambusa vulgaris wamin Dwarf Buddha Belly", "Bambusa textilis mutabilis Emerald Bamboo", "Bambusa emeiensis flavidovirens Yin Yang Yellowstripe"]
+print("I'll give you a random bamboo species")
+print(f"{bamboo_species[random.randint(0, len(bamboo_species) - 1)]}")
