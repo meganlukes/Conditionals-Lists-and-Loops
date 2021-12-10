@@ -80,3 +80,10 @@ import random
 #   print("You are alright together.")
 # else:
 #   print("Keep looking.")
+
+
+coin = random.random()
+if coin > 0.5:
+  print("heads")
+else:
+  print("tails")
