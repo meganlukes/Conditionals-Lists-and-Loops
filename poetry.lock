@@ -1,0 +1,17 @@
+[[package]]
+name = "split"
+version = "0.4"
+description = "Functions to split or partition sequences."
+category = "main"
+optional = false
+python-versions = "*"
+
+[metadata]
+lock-version = "1.1"
+python-versions = "^3.8"
+content-hash = "d6d7cb9e19e31b32d8725f0f6fed0557df1f907f5481046b164780415b15e040"
+
+[metadata.files]
+split = [
+    {file = "split-0.4.zip", hash = "sha256:c4be970a857d605d94999da18779bc10c34a34f937dede983268de3877b81faa"},
+]

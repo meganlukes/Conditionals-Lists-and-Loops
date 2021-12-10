@@ -90,5 +90,11 @@ import random
 
 
 bamboo_species = ["Bambusa chungii Blue Chungii", "Bambusa multiplex Alphonse Karr", "Bambusa multiplex Fernleaf", "Bambusa vulgaris wamin Dwarf Buddha Belly", "Bambusa textilis mutabilis Emerald Bamboo", "Bambusa emeiensis flavidovirens Yin Yang Yellowstripe"]
+
+print(f"The species currently in our database are {bamboo_species}")
 print("I'll give you a random bamboo species")
 print(f"{bamboo_species[random.randint(0, len(bamboo_species) - 1)]}")
+new_species = input("Give me a list of the new bamboo species, seperated by a comma. ")
+new_species_list = new_species.split(", ")
+bamboo_species = bamboo_species + new_species_list
+print(f"The species currently in our database are now {bamboo_species}")
