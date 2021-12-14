@@ -175,10 +175,19 @@ import random
 #   else:
 #     print("You lost")
 
-# Average heights for loop
+# List average for loop
 # heights = [180, 124, 16, 173, 189, 169, 146]
 # comb_height = 0
 # for height in heights:
 #   comb_height = comb_height + height
 # avg_height = int(comb_height / len(heights))
 # print(avg_height)
+
+
+# Highest number in list for loop
+# student_scores = [78, 65, 89, 86, 55, 91, 64, 89]
+# highest_score = 0
+# for score in student_scores:
+#   if score > highest_score:
+#     highest_score = score
+# print(highest_score)
