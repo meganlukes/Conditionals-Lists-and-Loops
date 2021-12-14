@@ -191,3 +191,14 @@ import random
 #   if score > highest_score:
 #     highest_score = score
 # print(highest_score)
+
+
+# Range function
+total = 0
+for number in range(1, 101):
+  total += number
+print (total)
+sum_even = 0
+for number in range(2, 101, 2):
+  sum_even += number
+print(sum_even)
