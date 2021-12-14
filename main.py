@@ -110,59 +110,62 @@ import random
 # sel_row[col] = "x"
 # print(f"{row1}\n{row2}\n{row3}")
 
-rock = '''
-    _______
----'   ____)
-      (_____)
-      (_____)
-      (____)
----.__(___)
-'''
+# rock = '''
+#     _______
+# ---'   ____)
+#       (_____)
+#       (_____)
+#       (____)
+# ---.__(___)
+# '''
 
-paper = '''
-    _______
----'   ____)____
-          ______)
-          _______)
-         _______)
----.__________)
-'''
+# paper = '''
+#     _______
+# ---'   ____)____
+#           ______)
+#           _______)
+#          _______)
+# ---.__________)
+# '''
 
-scissors = '''
-    _______
----'   ____)____
-          ______)
-       __________)
-      (____)
----.__(___)
-'''
-player = int(input("Type 1 for rock, 2 for paper, 3 for scissors "))
-computer = random.randint(1, 3)
-print(f"{player} {computer}")
+# scissors = '''
+#     _______
+# ---'   ____)____
+#           ______)
+#        __________)
+#       (____)
+# ---.__(___)
+# '''
+# player = int(input("Type 1 for rock, 2 for paper, 3 for scissors "))
+# computer = random.randint(1, 3)
+# print(f"{player} {computer}")
+# if player == 1:
+#   print(f"{rock}")
+# elif player == 2:
+#   print(f"{paper}")
+# else:
+#   print(f"{scissors}")
+# if computer == 1:
+#   print(f"{rock}")
+# elif computer == 2:
+#   print(f"{paper}")
+# else:
+#   print(f"{scissors}")
+# if player == computer:
+#   print("Tie!")
+# else:
+#   if player == 1 and computer == 3:
+#     print("You win!")
+#   elif player == 2 and computer == 1:
+#     print("You win!")
+#   elif player == 3 and computer == 2:
+#     print("You win!")
+#   else:
+#     print("You lost")
 
-if player == 1:
-  print(f"{rock}")
-elif player == 2:
-  print(f"{paper}")
-else:
-  print(f"{scissors}")
-
-if computer == 1:
-  print(f"{rock}")
-elif computer == 2:
-  print(f"{paper}")
-else:
-  print(f"{scissors}")
-
-
-if player == computer:
-  print("Tie!")
-else:
-  if player == 1 and computer == 3:
-    print("You win!")
-  elif player == 2 and computer == 1:
-    print("You win!")
-  elif player == 3 and computer == 2:
-    print("You win!")
-  else:
-    print("You lost")
+heights = [180, 124, 16, 173, 189, 169, 146]
+comb_height = 0
+for height in heights:
+  comb_height = comb_height + height
+avg_height = int(comb_height / len(heights))
+print(avg_height)
