@@ -98,14 +98,71 @@ import random
 # bamboo_species = bamboo_species + new_species_list
 # print(f"The species currently in our database are now {bamboo_species}")
 
-row1 = ["o", "o", "o"]
-row2 = ["o", "o", "o"]
-row3 = ["o", "o", "o"]
-map = [row1, row2, row3]
-print(f"{row1}\n{row2}\n{row3}")
-spot = input("Where do you want to place the x? ")
-row = int(spot[2]) - 1
-col = int(spot[0]) - 1
-sel_row = map[row]
-sel_row[col] = "x"
-print(f"{row1}\n{row2}\n{row3}")
+# row1 = ["o", "o", "o"]
+# row2 = ["o", "o", "o"]
+# row3 = ["o", "o", "o"]
+# map = [row1, row2, row3]
+# print(f"{row1}\n{row2}\n{row3}")
+# spot = input("Where do you want to place the x? ")
+# row = int(spot[2]) - 1
+# col = int(spot[0]) - 1
+# sel_row = map[row]
+# sel_row[col] = "x"
+# print(f"{row1}\n{row2}\n{row3}")
+
+rock = '''
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+'''
+
+paper = '''
+    _______
+---'   ____)____
+          ______)
+          _______)
+         _______)
+---.__________)
+'''
+
+scissors = '''
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+'''
+player = int(input("Type 1 for rock, 2 for paper, 3 for scissors "))
+computer = random.randint(1, 3)
+print(f"{player} {computer}")
+
+if player == 1:
+  print(f"{rock}")
+elif player == 2:
+  print(f"{paper}")
+else:
+  print(f"{scissors}")
+
+if computer == 1:
+  print(f"{rock}")
+elif computer == 2:
+  print(f"{paper}")
+else:
+  print(f"{scissors}")
+
+
+if player == computer:
+  print("Tie!")
+else:
+  if player == 1 and computer == 3:
+    print("You win!")
+  elif player == 2 and computer == 1:
+    print("You win!")
+  elif player == 3 and computer == 2:
+    print("You win!")
+  else:
+    print("You lost")
