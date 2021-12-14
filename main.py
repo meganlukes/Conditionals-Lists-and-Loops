@@ -89,12 +89,23 @@ import random
 #   print("tails")
 
 
-bamboo_species = ["Bambusa chungii Blue Chungii", "Bambusa multiplex Alphonse Karr", "Bambusa multiplex Fernleaf", "Bambusa vulgaris wamin Dwarf Buddha Belly", "Bambusa textilis mutabilis Emerald Bamboo", "Bambusa emeiensis flavidovirens Yin Yang Yellowstripe"]
+# bamboo_species = ["Bambusa chungii Blue Chungii", "Bambusa multiplex Alphonse Karr", "Bambusa multiplex Fernleaf", "Bambusa vulgaris wamin Dwarf Buddha Belly", "Bambusa textilis mutabilis Emerald Bamboo", "Bambusa emeiensis flavidovirens Yin Yang Yellowstripe"]
+# print(f"The species currently in our database are {bamboo_species}")
+# print("I'll give you a random bamboo species")
+# print(f"{bamboo_species[random.randint(0, len(bamboo_species) - 1)]}")
+# new_species = input("Give me a list of the new bamboo species, seperated by a comma. ")
+# new_species_list = new_species.split(", ")
+# bamboo_species = bamboo_species + new_species_list
+# print(f"The species currently in our database are now {bamboo_species}")
 
-print(f"The species currently in our database are {bamboo_species}")
-print("I'll give you a random bamboo species")
-print(f"{bamboo_species[random.randint(0, len(bamboo_species) - 1)]}")
-new_species = input("Give me a list of the new bamboo species, seperated by a comma. ")
-new_species_list = new_species.split(", ")
-bamboo_species = bamboo_species + new_species_list
-print(f"The species currently in our database are now {bamboo_species}")
+row1 = ["o", "o", "o"]
+row2 = ["o", "o", "o"]
+row3 = ["o", "o", "o"]
+map = [row1, row2, row3]
+print(f"{row1}\n{row2}\n{row3}")
+spot = input("Where do you want to place the x? ")
+row = int(spot[2]) - 1
+col = int(spot[0]) - 1
+sel_row = map[row]
+sel_row[col] = "x"
+print(f"{row1}\n{row2}\n{row3}")
