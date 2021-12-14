@@ -1,4 +1,6 @@
 import random
+
+# Conditionals
 # number = int(input("Give me a number "))
 # if number % 2 == 1:
 #   print(f"{number} is odd")
@@ -6,6 +8,7 @@ import random
 #   print(f"{number} is even")
 
 
+# BMI Calculator
 # print("Let's calculate your BMI")
 # kgWeight = float(input("How much do you weigh (in pounds)? ")) * 0.45359237
 # mHeight = float(input("How tall are you in inches? ")) * 2.54 / 100
@@ -21,6 +24,7 @@ import random
 #   print("You are underweight.")
 
 
+# Check if a year is a leap year
 # year = int(input("What year do you want to check? "))
 # if year % 4 != 0:
 #   print(f"{year} is not a leap year")
@@ -30,6 +34,7 @@ import random
 #   print(f"{year} is a leap year")
 
 
+#Conditional price calculator
 # print("Welcome to the bamboo garden!")
 # lucky = input("Are you here to purchase lucky bamboo? Y or N ")
 # if lucky != "N":
@@ -62,6 +67,7 @@ import random
 #   print(f"That will be {price}. Yes, I know that's rather expensive, but think of it more like a tree.")
 
 
+#Count the number of times certain letters appear in a phrase
 # print("Welcome to the Love Calculator!")
 # hisName = input("What is his name? ").lower()
 # herName = input("What is her name? ").lower()
@@ -82,6 +88,7 @@ import random
 #   print("Keep looking.")
 
 
+# Coin flip
 # coin = random.random()
 # if coin > 0.5:
 #   print("heads")
@@ -89,6 +96,7 @@ import random
 #   print("tails")
 
 
+#Lists
 # bamboo_species = ["Bambusa chungii Blue Chungii", "Bambusa multiplex Alphonse Karr", "Bambusa multiplex Fernleaf", "Bambusa vulgaris wamin Dwarf Buddha Belly", "Bambusa textilis mutabilis Emerald Bamboo", "Bambusa emeiensis flavidovirens Yin Yang Yellowstripe"]
 # print(f"The species currently in our database are {bamboo_species}")
 # print("I'll give you a random bamboo species")
@@ -98,6 +106,8 @@ import random
 # bamboo_species = bamboo_species + new_species_list
 # print(f"The species currently in our database are now {bamboo_species}")
 
+
+# Treasure map
 # row1 = ["o", "o", "o"]
 # row2 = ["o", "o", "o"]
 # row3 = ["o", "o", "o"]
@@ -110,6 +120,8 @@ import random
 # sel_row[col] = "x"
 # print(f"{row1}\n{row2}\n{row3}")
 
+
+# Rock paper scissors game
 # rock = '''
 #     _______
 # ---'   ____)
@@ -163,9 +175,10 @@ import random
 #   else:
 #     print("You lost")
 
-heights = [180, 124, 16, 173, 189, 169, 146]
-comb_height = 0
-for height in heights:
-  comb_height = comb_height + height
-avg_height = int(comb_height / len(heights))
-print(avg_height)
+# Average heights for loop
+# heights = [180, 124, 16, 173, 189, 169, 146]
+# comb_height = 0
+# for height in heights:
+#   comb_height = comb_height + height
+# avg_height = int(comb_height / len(heights))
+# print(avg_height)
