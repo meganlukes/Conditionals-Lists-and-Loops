@@ -194,11 +194,23 @@ import random
 
 
 # Range function
-total = 0
-for number in range(1, 101):
-  total += number
-print (total)
-sum_even = 0
-for number in range(2, 101, 2):
-  sum_even += number
-print(sum_even)
+# total = 0
+# for number in range(1, 101):
+#   total += number
+# print (total)
+# sum_even = 0
+# for number in range(2, 101, 2):
+#   sum_even += number
+# print(sum_even)
+
+
+# FizzBuzz
+# string = ""
+# for number in range(1, 101):
+#   if number % 3 == 0:
+#     string += "Fizz"
+#   if number % 5 == 0:
+#     string += "Buzz"
+# print(string)
+
+
